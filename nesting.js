@@ -50,7 +50,17 @@ var employees = [
     3. Return the updated employee array.
 */
 
-//Code Here
+function employeeUpdater() {
+  for (var i = 0; i < employees.length; i++) {
+    if (employees[i].firstName === 'Theo'){
+      employees.splice(i, 1);
+      i--
+    }
+    if (employees[i].firstName === 'Lorie') {
+      employees[i].department = 'HR';
+    }
+  } return employees;
+}
 
 
 
@@ -68,11 +78,20 @@ var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
     3. Return the updated array.
 */
 
-//Code Here
 
 
+// function removeDuplicates(){
+//   var result = workplaceAccidents;
+//   for (let i = 0; i < workplaceAccidents.length; i++) {
+//     for (let j = workplaceAccidents.length - 1; j >= 0; j--) {
+//       if (result[j] === workplaceAccidents[i]) {
+//         result.splice(j, 1);
+//       }
+//     } 
+//   } return result;
+// } 
 
-////////// PROBLEM 3 //////////
+// you start with an array
 
 // Do not edit the code below.
 var cat = {

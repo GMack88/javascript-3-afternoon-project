@@ -94,14 +94,9 @@ const monstersInYourPocket = [{"monster":"Bulbabunny","CP":156},{"monster":"Bulb
   Use the filter method to return only the monsters that have a CP of over 200.
 */
 
-let myStrongest = monstersInYourPocket.filter(function (element){
-  return monstersInYourPocket['monster'];
-})
-.map(function(element, index){
-  return myStrongest['monster'] + myStrongest['CP'] > 200;
-})
-.reduce(function(total, element, index, arr){
-  return 
+let myStrongest = monstersInYourPocket.filter(function(element){
+  return element.CP > 200;
+
 });
 
 
